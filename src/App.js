@@ -9,7 +9,8 @@ function App() {
       <Route exact path="/" element={<Login/>} />
       <Route path="/main" element={<Main/>} />
     </Routes>
-  </Router></div>
+  </Router>
+  </div>
     
   );
 }

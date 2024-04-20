@@ -22,10 +22,13 @@ const Main = () => {
         })
     }
   return (
-    <div>
-      <Navbar onLogout={handleLogOut} isLoggedIn={true} /> 
+    <div style={{position: 'relative'}}>
+      <Navbar onLogout={handleLogOut} isLoggedIn={true} />
+      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
       <h1 style={{fontFamily:"cursive"}}>Welcome to the event! Here is your image</h1>
-      <img src={randomImageUrl} alt="Random Image" style={{width: "70%", height:"70%"}} />
+     <img src={randomImageUrl} alt="Random Image" style={{width: "70%", height:"70%", paddingBottom: 60}} />
+  <footer style={{marginBottom: 20, fontFamily: "monospace", fontSize:"20px"}}>@Microsoft Ignite Students Club</footer>
+      </div>
     </div>
   )
 }
