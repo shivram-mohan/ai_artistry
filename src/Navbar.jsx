@@ -11,9 +11,7 @@ function Navbar({ isLoggedIn, onLogout }) {
         </p>
       </div>
       <div className={navBarSass.buttonDiv}>
-        {
-          isLoggedIn && <button className={navBarSass.button} onClick={onLogout}>Log Out</button>
-        }
+        <img src="logo.png" alt="MISC LOGO" style={{width:"150px", height:"150px"}}/>
       </div>
     </div>
   )
